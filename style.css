@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* universal styles */
+
+/* css variables */
+
+:root {
+  --clrprimary: rgba(45, 156, 219, 1);
+  --clrdark: rgba(40, 40, 40, 1);
+  --clrbodytext: rgba(100, 100, 100, 1);
+  --clrlightgray: rgba(247, 247, 247, 1);
+
+  --fsh1: 87px;
+  --fsh2: 28px;
+  --fsh3: 24px;
+  --fslarge: 22px;
+  --fsmedium: 18px;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--clrbodytext);
+}
+
+h1 {
+  font-size: var(--fsh1);
+  font-weight: 400;
+  line-height: 0.9;
+  color: var(--clrdark);
+}
+
+h2 {
+  font-size: var(--fsh2);
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  color: var(--clrdark);
+}
+
+h3 {
+  font-size: var(--fsh3);
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--clrdark);
+}
+
+.large {
+  font-size: var(--fslarge);
+  color: var(--clrdark);
+}
+
+.medium {
+  font-size: var(--fsmedium);
+  color: var(--clrdark);
+}
+
+a {
+  color: var(--clrdark);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  border-radius: 50px;
+  border: solid 1px var(--clrprimary);
+  cursor: pointer;
+  padding: 8px 35px;
+  display: block;
+  width: fit-content;
+  font-size: 1rem;
+}
+
+.primary {
+  color: var(--clrprimary);
+}
+
+.container {
+  width: 800px;
+  margin: auto;
+}
+
+.line {
+  height: 1px;
+  width: 100px;
+  margin-top: 8px;
+  background-color: var(--clrprimary);
+}
+
+.wide-line {
+  width: 300px;
+  margin: 70px auto;
+}
+
+i {
+  margin-right: 30px;
+  transform: scale(1.2);
+}
+
+section {
+  padding: 80px 0;
+}
+
+/* header */
+
+header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 0 0 50px;
+  z-index: 3;
+}
+
+nav {
+  /*background-color: white;*/
+  height: 50px;
+  padding: 0 50px 0 0;
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 5px;
+}
+
+header li {
+  display: inline-block;
+  margin: 0 30px;
+  text-transform: uppercase;
+  color: var(--clrdark);
+}
+
+header li:last-of-type {
+  margin-right: 0;
+}
+
+/* hero section */
+
+.hero-section {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0;
+}
+
+.hero-section .container {
+  z-index: 1;
+}
+
+.clouds-underlay {
+  background: url('./images/mountains.jpg') no-repeat center;
+  background-size: cover;
+  opacity: 0.2;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+/* about section */
+
+.about-section {
+  background-color: var(--clrlightgray);
+}
+
+.about-section .line {
+  margin-bottom: 30px;
+}
+
+.about-top {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.about-text p {
+  width: 400px;
+}
+
+.about-top img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.square-image, .square-light, .square-dark {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  border: 1px solid var(--clrprimary);
+  position: absolute;
+}
+
+.square-image {
+  background-color: rgba(244, 251, 255, 1);
+  top: 0;
+  right: 20px;
+  z-index: 2;
+}
+
+.square-light {
+  background-color: rgba(226, 245, 255, 1);
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+.square-dark {
+  background-color: rgba(193, 233, 255, 1);
+  top: 20px;
+  right: 0;
+}
+
+.about-bottom .large {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.circle-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 475px;
+  margin: 0 auto;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--clrprimary);
+  color: var(--clrdark);
+}
+
+.circle:nth-of-type(1), .circle:nth-of-type(2), .circle:nth-of-type(3), .circle:nth-of-type(4) {
+  margin-bottom: 25px;
+}
+
+/* work section */
+
+.work-section .line {
+  margin-bottom: 70px;
+}
+
+.work-section .large {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.work-screens {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+
+.desktop {
+  width: auto;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.mob {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 280px;
+  width: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* contact section */
+
+.contact-section {
+  background-color: var(--clrlightgray);
+}
+
+.contact-section .medium {
+  margin: 30px 0;
+  width: 350px;
+}
+
+/* footer */
+
+footer {
+  background-color: var(--clrdark);
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+
