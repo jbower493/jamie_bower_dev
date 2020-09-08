@@ -443,8 +443,29 @@ nav li {
   box-shadow: var(--boxshadow);
 }
 
-@media (max-width: ) {
+@media (max-width: 900px) {
+  .work-screens {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+  }
   
+  .desktop {
+    width: 88%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: var(--boxshadow);
+  }
+  
+  .mob {
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    height: 32vw;
+    width: auto;
+    border-radius: 5px;
+    box-shadow: var(--boxshadow);
+  }
 }
 
 /* contact section */
