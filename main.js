@@ -2,14 +2,14 @@
 
 // fist page animates in after document has loaded
 window.addEventListener('load', () => {
-  document.getElementById('loader').style.display = 'none';
+  document.getElementById('loader').classList.add('hidden');
   
   const tl = gsap.timeline();
 
   if(window.matchMedia("(max-width: 900px)").matches) {
-    tl.from('header', {opacity: 0, y: -20, duration: 0.5, delay: 0.5});
+    tl.from('header', {opacity: 0, y: -20, duration: 0.5});
   } else {
-    tl.from('.li1', {opacity: 0, y: -20, duration: 0.5, delay: 1});
+    tl.from('.li1', {opacity: 0, y: -20, duration: 0.5});
     tl.from('.li2', {opacity: 0, y: -20, duration: 0.5}, '<0.15');
     tl.from('.li3', {opacity: 0, y: -20, duration: 0.5}, '<0.15');
     tl.from('.li4', {opacity: 0, y: -20, duration: 0.5}, '<0.15');
