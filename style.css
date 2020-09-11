@@ -328,10 +328,6 @@ nav li {
 
 /* about section */
 
-.about-section {
-  background-color: var(--clrlightgray);
-}
-
 .about-section .line {
   margin-bottom: 30px;
 }
@@ -436,6 +432,10 @@ nav li {
 }
 
 /* work section */
+
+.work-section {
+  background-color: var(--clrlightgray);
+}
 
 .work-section .line {
   margin-bottom: 70px;
