@@ -20,7 +20,7 @@
   --fsh2: 28px;
   --fsh3: 24px;
   --fslarge: 22px;
-  --fsmedium: 18px;
+  --fsmedium: 19px;
 
   --boxshadow: 0 2px 10px rgba(0,0,0,0.2);
 }
@@ -31,7 +31,7 @@
     --fsh2: 24px;
     --fsh3: 22px;
     --fslarge: 20px;
-    --fsmedium: 17px;
+    --fsmedium: 18px;
   }
 }
 
@@ -510,7 +510,7 @@ nav li {
   background-color: var(--clrlightgray);
 }
 
-.responsive-section .large {
+.responsive-section .medium {
   margin-bottom: 40px;
 }
 
