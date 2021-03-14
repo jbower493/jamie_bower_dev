@@ -88,10 +88,16 @@ ul {
   border-radius: 50px;
   border: solid 1px var(--clrprimary);
   cursor: pointer;
-  padding: 8px 35px;
-  display: block;
-  width: fit-content;
+  padding: 8px 0;
+  display: inline-block;
+  width: 156px;
+  text-align: center;
   font-size: 1rem;
+}
+
+.btn-solid {
+  background-color: var(--clrprimary);
+  color: white;
 }
 
 .primary {
@@ -338,10 +344,13 @@ nav li {
 
 .work-title {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin: 20px 0;
+}
+
+.btn-solid {
+  margin-left: 20px;
 }
 
 .work-screens {
@@ -365,6 +374,17 @@ nav li {
   width: auto;
   border-radius: 5px;
   box-shadow: var(--boxshadow);
+}
+
+@media (max-width: 700px) {
+  .button-holder {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-solid {
+    margin: 20px 0 0 0;
+  }
 }
 
 @media (max-width: 900px) {
